@@ -79,6 +79,24 @@ h1{
     font-size: 22px !important;
     font-weight: bolder !important;
 }
+.very-small-card h3{
+    font-size: 16px !important;
+    font-weight: bolder;
+}
+
+.all-news-btn{
+    background-color: #6c757d;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* .very-small-card img{
+    width: 100px;
+} */
+
+
 
 
 
