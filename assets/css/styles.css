@@ -90,11 +90,28 @@ h1{
     color: #fff;
     text-align: center;
 }
+.news-tab .nav-link{
+    font-size: 24px !important;
+}
+
+.header-red-border{
+    border-bottom: 3px solid red;
+}
+
+.header-bg-1{
+    background-color: #C60C1D;
+}
+
+
 
 
 /* .very-small-card img{
     width: 100px;
 } */
+/* fonts */
+.font-size-28{
+    font-size: 28px;
+}
 
 
 
