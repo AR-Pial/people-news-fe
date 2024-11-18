@@ -102,6 +102,15 @@ h1{
     background-color: #C60C1D;
 }
 
+.header-left-border {
+    color: #111111;
+    font-weight: bold;
+    font-size: 30px;
+    border-left: 10px solid #ED1C24;
+    text-transform: uppercase;
+    padding: 0px 10px 0px;
+}
+
 
 
 
