@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeopleNewsbd</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="../assets/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/responsive.css" rel="stylesheet">  
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    
+    <!-- top bar starts -->
+    <div class="topbar">
+        <div class="custom-container d-flex justify-content-between align-items-center py-2">
+            <div class="text-white">ঢাকা, বাংলাদেশ ০৩ নভেম্বর, ২০২৪</div>
+            <div class="d-flex flex-warp gap-2 gap-lg-3">
+                <a href=""><img src="../assets/images/icons/sslogoico.png" alt="" width="23"></a>
+                <a href=""><img src="../assets/images/icons/facebook32.png" alt="" width="23"></a>
+                <a href="" class="d-none d-lg-block"><img src="../assets/images/icons/twitter32.png" alt="" width="23"></a>
+                <a href=""><img src="../assets/images/icons/youtube32.png" alt="" width="23"></a>
+                <a href="" class="d-none d-lg-block"><img src="../assets/images/icons/linkedin32.png" alt="" width="23"></a> 
+            </div>
+        </div>
+    </div>
+    <!-- top bar ends -->
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm navbar-border sticky-top">
+        <div class="custom-container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.png" alt="" width="285">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Regular Navbar for Larger Screens -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/home.html">
+                            <i class="fas fa-home fa-lg "></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/category_page.html"> জাতীয় </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> বাংলাদেশ </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> আন্তর্জাতিক </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">  রাজনীতি  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">  অর্থনীতি  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">  শিক্ষা  </a>
+                    </li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="district_wise" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            জেলার খবর 
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-full-district" aria-labelledby="district_wise">
+                            
+                            <div class="d-flex justify-content-around">
+                                <!-- divisions -->
+                                <div class="nav-division-div px-3 px-lg-4">
+                                    <li>
+                                        <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                    </li>
+                                    <hr class="my-0 pb-3">
+
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    
+                                </div>
+
+                                <div class="nav-division-div px-3 px-lg-4">
+                                    <li>
+                                        <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                    </li>
+                                    <hr class="my-0 pb-3">
+
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    
+                                </div>
+
+                                <div class="nav-division-div px-3 px-lg-4">
+                                    <li>
+                                        <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                    </li>
+                                    <hr class="my-0 pb-3">
+
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    
+                                </div>
+
+                                <div class="nav-division-div px-3 px-lg-4">
+                                    <li>
+                                        <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                    </li>
+                                    <hr class="my-0 pb-3">
+
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    
+                                </div>
+
+                                <div class="nav-division-div px-3 px-lg-4">
+                                    <li>
+                                        <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                    </li>
+                                    <hr class="my-0 pb-3">
+
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    
+                                </div>
+
+                                <div class="nav-division-div px-3 px-lg-4">
+                                    <li>
+                                        <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                    </li>
+                                    <hr class="my-0 pb-3">
+
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    
+                                </div>
+
+                                <div class="d-flex flex-column nav-division-div px-3 px-lg-4">
+                                    <div class="nav-division-div px-3 px-lg-4">
+                                        <li>
+                                            <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                        </li>
+                                        <hr class="my-0 pb-3">
+
+                                        <li class="w-100 nav-district-div my-2">
+                                            <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                        </li>
+                                        <hr class="my-2">
+                                        <li class="w-100 nav-district-div my-2">
+                                            <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                        </li>
+                                        <hr class="my-2">
+                                        <li class="w-100 nav-district-div my-2">
+                                            <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                        </li>
+                                        <hr class="my-2">
+                                        <li class="w-100 nav-district-div my-2">
+                                            <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                        </li>
+                                        <hr class="my-2">
+                                        
+                                    </div>
+                                    <div class="nav-division-div px-3 px-lg-4">
+                                        <li>
+                                            <a class="fw-bolder font-size-22 nav-div-header" href="#">ময়মনসিংহ বিভাগ</a>
+                                        </li>
+                                        <hr class="my-0 pb-3">
+
+                                        <li class="w-100 nav-district-div my-2">
+                                            <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                        </li>
+                                        <hr class="my-2">
+                                        <li class="w-100 nav-district-div my-2">
+                                            <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                        </li>
+                                        <hr class="my-2">
+                                        <li class="w-100 nav-district-div my-2">
+                                            <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                        </li>
+                                        <hr class="my-2">
+                                        <li class="w-100 nav-district-div my-2">
+                                            <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                        </li>
+                                        <hr class="my-2">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link more-nav-link dropdown-toggle" href="#" id="more" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            আরও 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-full-more" aria-labelledby="more">
+                            <div class="row">
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                                <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            </div>
+                            
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu for Small Screens -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/logo.png" alt="" width="200">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto gap-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/home.html">
+                        <i class="fas fa-home fa-lg "></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/category_page.html"> জাতীয় </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> বাংলাদেশ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> আন্তর্জাতিক </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">  রাজনীতি  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">  অর্থনীতি  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">  শিক্ষা  </a>
+                </li>
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="district_wise" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        জেলার খবর 
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="district_wise">
+                        <div class="d-flex flex-column justify-content-around">
+                            <!-- divisions -->
+                            <div class="nav-division-div px-3 px-lg-4">
+                                <li>
+                                    <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                </li>
+                                <hr class="my-0 pb-3">
+
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                
+                            </div>
+
+                            <div class="nav-division-div px-3 px-lg-4">
+                                <li>
+                                    <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                </li>
+                                <hr class="my-0 pb-3">
+
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                
+                            </div>
+
+                            <div class="nav-division-div px-3 px-lg-4">
+                                <li>
+                                    <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                </li>
+                                <hr class="my-0 pb-3">
+
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                
+                            </div>
+
+                            <div class="nav-division-div px-3 px-lg-4">
+                                <li>
+                                    <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                </li>
+                                <hr class="my-0 pb-3">
+
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                
+                            </div>
+
+                            <div class="nav-division-div px-3 px-lg-4">
+                                <li>
+                                    <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                </li>
+                                <hr class="my-0 pb-3">
+
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                
+                            </div>
+
+                            <div class="nav-division-div px-3 px-lg-4">
+                                <li>
+                                    <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                </li>
+                                <hr class="my-0 pb-3">
+
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                <li class="w-100 nav-district-div my-2">
+                                    <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                </li>
+                                <hr class="my-2">
+                                
+                            </div>
+
+                            <div class="d-flex flex-column nav-division-div px-3 px-lg-4">
+                                <div class="nav-division-div px-3 px-lg-4">
+                                    <li>
+                                        <a class="fw-bolder font-size-22 nav-div-header" href="#">ঢাকা বিভাগ</a>
+                                    </li>
+                                    <hr class="my-0 pb-3">
+
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    
+                                </div>
+                                <div class="nav-division-div px-3 px-lg-4">
+                                    <li>
+                                        <a class="fw-bolder font-size-22 nav-div-header" href="#">ময়মনসিংহ বিভাগ</a>
+                                    </li>
+                                    <hr class="my-0 pb-3">
+
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    <li class="w-100 nav-district-div my-2">
+                                        <a class="font-size-18  mx-0 px-0" href="#">ঢাকা</a>
+                                    </li>
+                                    <hr class="my-2">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link more-nav-link dropdown-toggle" href="#" id="more" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        আরও 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="more">
+                        <div class="row">
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                            <li class="col-12 col-md-3 col-lg-2 p-2"><a class="dropdown-item" href="#">বিনোদন</a></li>
+                        </div>
+                        
+                    </ul>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <!-- navbar  ends -->
+    
+    <!-- main section starts -->
+    <main class="custom-container">
+        <!-- breadcrumb starts -->
+        <div class="py-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb py-0 my-0">
+                    <li class="breadcrumb-item"><a href="#"><i class="fas fa-home fa-lg "></i></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">জাতীয়</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- breadcrumb ends -->
+
+        <!-- news section starts -->
+        <div class="py-1">
+            <div class="row w-100 mx-auto">
+                <!-- left side -->
+                <div class="col-12 col-lg-8 px-0">
+                    <div class="row">
+                        <h2 class="col-12 fw-bolder">
+                            কার্বন নিঃসরণ ও নবায়নযোগ্য শক্তি ব্যবহার: দক্ষিণ এশিয়ার চাহিদা ৫ ট্রিলিয়ন ডলার
+                        </h2>
+                        <div class="col-12">
+                            <p class="text-muted py-1 mb-0"> <strong>Publish :</strong> 09:04 AM, 20 November 2024.</p>
+                            <img class="w-100" src="../assets/images/news_images/khaleda.jpeg" alt="">
+                            <p class="my-0 text-center py-1 text-muted">সংগৃহীত</p>
+                            <h5 class="fw-bolder font-size-22 py-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"></path>
+                                    <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"></polygon>
+                                </svg>
+                                <span> সোহেলী চৌধুরী, বাকু (আজারবাইজান) থেকে :</span>
+                            </h5>
+                        </div>
+                        <div class="col-12 news-para">
+                            <p>আজারবাইজানের বাকুতে চলছে জাতিসংঘের জলবায়ুবিষয়ক সম্মেলন (কপ-২৯)। এ সম্মেলনে জলবায়ুর সুরক্ষায় নানা দাবি ও মতামত ওঠে আসছে বিশ্বনেতাদের মুখ থেকে। </p>
+                            <p>বুধবার (১৩ নভেম্বর) জাতিসংঘের অর্থ–সংক্রান্ত স্ট্যান্ডিং কমিটির এক প্রতিবেদনে বলা হয়, পরিবেশের সুরক্ষায় কার্বন নিঃসরণ ও নবায়নযোগ্য শক্তি ব্যবহারের জন্য শুধু দক্ষিণ এশিয়ার দেশগুলোর চাহিদাই প্রায় পাঁচ ট্রিলিয়ন বা পাঁচ লাখ কোটি ডলার।  </p>
+                            <p>প্রতিবেদনে দেয় যায়, জলবায়ু সুরক্ষার স্বার্থে এশিয়ার ২০টি দেশের মোট ৩৭৪টি অবশ্য প্রয়োজনের জন্য খরচ ধার্য করা হয়েছে তিন দশমিক তিন থেকে চার দশমিক নয় ট্রিলিয়ন ডলার। এ অর্থের মধ্যে উষ্ণায়ন প্রশমন বা ‘মিটিগেশন’–এর জন্য প্রয়োজন দুই দশমিক নয় ট্রিলিয়ন ডলার। অভিযোজন বা ‘অ্যাডাপটেশন’-এর জন্য দরকার ৩২৫ থেকে ৪৩১ বিলিয়ন ডলার। এই অর্থের মধ্যে সিংহভাগ ভারতের।  চাহিদা অনুযায়ী বাংলাদেশের  জন্য ধরা হয়েছে ১২ বিলিয়ন ডলার। এ চাহিদার মধ্যে বিভেদ নেই ভারত, বাংলাদেশ ও পাকিস্তানের। এর মধ্যে চীনের চাহিদার কোনো উল্লেখ করা হয়নি। </p>
+                            <p>প্যারিস চুক্তি অনুযায়ী কার্বন প্রশমন ও অভিযোজনে রাষ্ট্রীয় নির্ধারিত অবদানের (এনডিসি) নিরিখে সবচেয়ে বেশি অর্থ প্রয়োজন এশিয়ার; এরপর আফ্রিকা। চাহিদার ভিত্তিতে এশিয়ার উন্নয়নশীল দেশগুলোর মধ্যে প্রথম সারিতে রয়েছে ভারত, ইন্দোনেশিয়া, ইরান ও পাকিস্তান। আয়তন, জনসংখ্যা ও দূষণ রোধে প্রয়োজনীয় অর্থায়নের নিরিখে প্রথম দিকে রয়েছে বাংলাদেশ।</p>
+                            <p>বিশ্বের ১৪২টি দেশের মোট পাঁচ হাজার ৭৬০টি প্রয়োজনের মধ্যে দুই হাজার ৭৫৩টির খরচ হিসাব করা হয়েছে। এটি মোট প্রয়োজনের ৪৮ শতাংশ। এর জন্য খরচের দাবি মোটামুটিভাবে পাঁচ থেকে সাড়ে আট ট্রিলিয়ন ডলার। দূষণমুক্তির মাধ্যমে পৃথিবীকে বাসযোগ্য করে তুলতে হলে ২০৩০ সালের এই অর্থ উন্নত বিশ্বকে খরচ করতে হবে। সেই অর্থ উন্নত বিশ্ব দেবে কিনা, দিলেও কতটুকু, বাকুতে ‘কপ-২৯’-এর আসরে সেটিই মূল আলোচ্য বিষয়। </p>
+                        </div>
+                    </div>
+                    <!-- social link badges -->
+                    <div class="d-flex flex-wrap share-social-link gap-2 my-2 pb-3">
+                        <a href="#" class="badge rounded-pill py-2 px-4 bg-primary text-white">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </a>
+                        <a href="#" class="badge rounded-pill py-2 px-4 bg-secondary text-white">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        <a href="#" class="badge rounded-pill py-2 px-4 bg-success text-white">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="#" class="badge rounded-pill py-2 px-4 bg-danger text-white">
+                            <i class="fab fa-pinterest-p"></i> Pinterest
+                        </a>
+                        <a href="#" class="badge rounded-pill py-2 px-4 bg-warning text-white">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="#" class="badge rounded-pill py-2 px-4 bg-info text-white">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="#" class="badge rounded-pill py-2 px-4 bg-primary text-white">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="#" class="badge rounded-pill py-2 px-4 bg-dark text-white">
+                            <i class="fab fa-telegram-plane"></i> Telegram
+                        </a>
+                    </div>    
+                </div>
+                <!-- right side -->
+                <div class="col-12 col-lg-4 ps-lg-4">
+                    <!-- contact for ad -->
+                    <div class="border text-muted d-flex flex-column justify-content-center align-items-center px-4 px-lg-5">
+                        <div class="w-100">
+                            <h3 class="text-center py-3">-- বিজ্ঞাপন --</h3>
+                            <hr class="m-0">
+                        </div>
+                        <div class="w-100 text-center py-3">
+                            <p>CONTACT</p>
+                            <p>ads@peoplenewsbd.com</p>
+                        </div>
+                    </div>
+                    <div class="py-3">
+                        <img class="w-100" src="../assets/images/ad_images/add3.jpg" alt="">
+                    </div>
+                    <!-- latest and famous tab -->
+                    <div class="news-tab py-1">
+                        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="latest-tab" data-bs-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="true">সর্বশেষ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="popular-tab" data-bs-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="false">জনপ্রিয়</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content py-t" id="myTabsContent">
+                            <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                                <!-- Content for 'সর্বশেষ' goes here -->
+                                <div class="very-small-card row justify-content-between align-items-center mx-0">
+                                    <div class="col-9 py-2">
+                                        <h3>গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                    </div>
+                                    <div class="col-3 px-0 py-2">
+                                        <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0 ">
+                                </div>
+                                <div class="very-small-card row justify-content-between align-items-center mx-0">
+                                    <div class="col-9 py-2">
+                                        <h3>গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                    </div>
+                                    <div class="col-3 px-0 py-2">
+                                        <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0 ">
+                                </div>
+                                <div class="very-small-card row justify-content-between align-items-center mx-0">
+                                    <div class="col-9 py-2">
+                                        <h3>গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                    </div>
+                                    <div class="col-3 px-0 py-2">
+                                        <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0 ">
+                                </div>
+                                <div class="very-small-card row justify-content-between align-items-center mx-0">
+                                    <div class="col-9 py-2">
+                                        <h3>গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                    </div>
+                                    <div class="col-3 px-0 py-2">
+                                        <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0 ">
+                                </div>
+                                
+                                
+
+
+                            </div>
+                            <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                                <!-- Content for 'জনপ্রিয়' goes here -->
+                                <div class="very-small-card row justify-content-between align-items-center mx-0">
+                                    <div class="col-9 py-2">
+                                        <h3>গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                    </div>
+                                    <div class="col-3 px-0 py-2">
+                                        <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0 ">
+                                </div>
+                                <div class="very-small-card row justify-content-between align-items-center mx-0">
+                                    <div class="col-9 py-2">
+                                        <h3>গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                    </div>
+                                    <div class="col-3 px-0 py-2">
+                                        <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0 ">
+                                </div>
+                                <div class="very-small-card row justify-content-between align-items-center mx-0">
+                                    <div class="col-9 py-2">
+                                        <h3>গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                    </div>
+                                    <div class="col-3 px-0 py-2">
+                                        <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0 ">
+                                </div>
+                                <div class="very-small-card row justify-content-between align-items-center mx-0">
+                                    <div class="col-9 py-2">
+                                        <h3>গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                    </div>
+                                    <div class="col-3 px-0 py-2">
+                                        <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                    </div>
+                                    <hr class="w-100 m-0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2 d-flex">
+                        <a class="all-news-btn w-100" href=""> সব খবর</a>
+                    </div>
+                    <div class="py-3">
+                        <h4 class="fw-bolder pb-1 header-red-border">জাতীয় বিভাগের অন্যান্য খবর</h4>
+                        <div class="row">
+                            <div class="very-small-card col-6 row justify-content-between align-items-center mx-0">
+                                <div class="col-12 px-0 py-2">
+                                    <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                </div>
+                                <div class="col-12 py-2 px-0">
+                                    <h3 class="px-0">গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                </div>
+                            </div>
+                            <div class="very-small-card col-6 row justify-content-between align-items-center mx-0">
+                                <div class="col-12 px-0 py-2">
+                                    <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                </div>
+                                <div class="col-12 py-2 px-0">
+                                    <h3 class="px-0">গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                </div>
+                            </div>
+                            <div class="very-small-card col-6 row justify-content-between align-items-center mx-0">
+                                <div class="col-12 px-0 py-2">
+                                    <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                </div>
+                                <div class="col-12 py-2 px-0">
+                                    <h3 class="px-0">গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                </div>
+                            </div>
+                            <div class="very-small-card col-6 row justify-content-between align-items-center mx-0">
+                                <div class="col-12 px-0 py-2">
+                                    <img class="w-100" src="../assets/images/news_images/gaza.jpeg" alt="">
+                                </div>
+                                <div class="col-12 py-2 px-0">
+                                    <h3 class="px-0">গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</h3>
+                                </div>
+                            </div>
+                                           
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!-- news section ends -->
+    </main>
+    <!-- main section ends -->
+
+    <!-- footer section starts -->
+    <footer class="footer-bg">
+        <div class="custom-container footer-contents pt-3 pt-lg-4 d-flex flex-column text-center justify-content-center">
+            <!-- follow us and social links -->
+            <div class="d-flex flex-column justify-content-center text-center py-2">
+                <h4 class="fw-bolder">Follow Us</h4>
+                <div class="d-flex flex-wrap gap-2 gap-lg-3 mx-auto py-2 py-lg-3">
+                    <a href="#" class="rounded-circle bg-dark shadow-lg footer-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="rounded-circle bg-dark shadow-lg footer-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="rounded-circle bg-dark shadow-lg footer-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="rounded-circle bg-dark shadow-lg footer-social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="rounded-circle bg-dark shadow-lg footer-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="py-1 my-0">প্রকাশক ও সম্পাদক</p>
+            <p class="font-size-22 py-1 my-0 fw-bolder">বার্তা সম্পাদক</p>
+            <p class="py-1 my-0">প্রকাশক ও সম্পাদক</p>
+            <p class="font-size-22 py-1 my-0 fw-bolder">সোহেলী চৌধুরী লিন্ডা </p>
+            <p class="py-1 my-0">Rupayan FPAB (Lift-07), Purana Paltan (Box Culvert Road),</p>
+            <p class="py-1 my-0">Dhaka-1000, Bangladesh.</p>
+            <p class="py-1 my-0">Phone: +88 01684960407</p>
+            <p class="pt-3 pb-2">© 2024 সর্বস্বত্ব সংরক্ষিত || peoplesnewsbd.net</p>
+            <hr class="my-0">
+            <p class="pt-3 pb-1">Develop by _ DigitalSolutions.Ltd</p> 
+        </div>
+    </footer>
+    <!-- footer section starts -->
+
+    <!-- live headlines starts -->
+    <div class="live-headlines pt-2  sticky-bottom">
+        <marquee class="" direction="left" speed="normal" scrollamount="5" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
+            <a href="../pages/news_page.html" class="mx-4">
+                <img src="../assets/images/news_images/gaza.jpeg" width="50" alt="">
+                <span class="ms-2 font-size-18 fw-bolder text-white">গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</span>
+            </a>
+            <a href="../pages/news_page.html" class="mx-4">
+                <img src="../assets/images/news_images/gaza.jpeg" width="50" alt="">
+                <span class="ms-2 font-size-18 fw-bolder text-white">গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</span>
+            </a>
+            <a href="../pages/news_page.html" class="mx-4">
+                <img src="../assets/images/news_images/gaza.jpeg" width="50" alt="">
+                <span class="ms-2 font-size-18 fw-bolder text-white">গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</span>
+            </a>
+            <a href="../pages/news_page.html" class="mx-4">
+                <img src="../assets/images/news_images/gaza.jpeg" width="50" alt="">
+                <span class="ms-2 font-size-18 fw-bolder text-white">গাজা, লেবানন ও সিরিয়ায় ইসরায়েলের হামলা, নিহত ৯৪</span>
+            </a>
+        </marquee>
+    </div>
+    <!-- live headlines ends -->
+    
+    <!-- Bootstrap JS (Optional for JavaScript features) -->
+    <script src="../assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/scripts.js"></script>
+
+</body>
+</html>

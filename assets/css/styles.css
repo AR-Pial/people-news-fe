@@ -102,22 +102,32 @@ a:hover{
     opacity: 1;
     visibility: visible;
 }
-/* .navbar .custom-container{
+/* .navbar{
     position: relative;
 } */
  
 
-.dropdown-menu-full { 
-    position: fixed !important; 
-    width: 100vw !important; 
-    left: 0 !important; 
-    right: 0 !important; 
-    margin: 0 !important; 
-    padding: 10px !important; 
+.dropdown-menu-full-district { 
+    position: fixed !important; /* Keep it fixed relative to the viewport */
+    left: 0 !important;  /* Align it to the left */
+    right: 0 !important; /* Align it to the right */
+    width: 100vw !important; /* Make it full width */
+    z-index: 1000 !important; /* Ensure it's above other content */
+    margin: 0 !important;
+    padding: 0 !important;
     box-shadow: none !important; 
-    top: auto !important; 
     border-radius: 5px;
-    z-index: 1000; 
+}
+.dropdown-menu-full-more{ 
+    position: fixed !important; /* Keep it fixed relative to the viewport */
+    left: 0 !important;  /* Align it to the left */
+    right: 0 !important; /* Align it to the right */
+    width: 100vw !important; /* Make it full width */
+    z-index: 2000 !important; /* Ensure it's above other content */
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important; 
+    border-radius: 5px;
 }
 
 .nav-division-div:hover{
@@ -131,6 +141,7 @@ a:hover{
     background-color: white;
     width: 100%;
 }
+
 
 /* news and cards */
 .small-card{
@@ -151,6 +162,7 @@ a:hover{
     padding: 10px;
     color: #fff;
     text-align: center;
+    border-radius: 5px;
 }
 .news-tab .nav-link{
     font-size: 24px !important;
@@ -171,6 +183,16 @@ a:hover{
     border-left: 10px solid #ED1C24;
     text-transform: uppercase;
     padding: 0px 10px 0px;
+}
+.more-news-same-section-btn:hover{
+    color: white !important;
+}
+.read-more{
+    color: #00008B;
+    font-size: 14px;
+    background-color: #FFFF00 !important;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 /* Youtube vodeos section */
@@ -198,6 +220,12 @@ a:hover{
     background-color: #DDDDDD !important;
 }
 
+.live-headlines{
+    background-color: #BF0000;
+}
+
+/* footer */
+
 .footer-bg{
     background-color: #353535;
 }
@@ -214,7 +242,28 @@ a:hover{
     transform: scale(1.2);
 }
 
+/* category page */
+.sub-menu-header{
+    font-size: 2rem;
+    border-left: 8px solid #149CB8;
+    padding: 5px 10px;
+}
 
+/* news details page */
+.news-para{
+    font-size: 18px;
+}
+
+/* Add smooth transition on hover */
+.share-social-link a.badge {
+    transition: transform 0.3s ease;
+    
+}
+
+.share-social-link a.badge:hover {
+    transform: translateY(-5px); /* Moves the badge upwards */
+    color: white !important;
+}
 
 
 /* .very-small-card img{

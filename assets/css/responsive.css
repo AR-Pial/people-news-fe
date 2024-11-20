@@ -12,6 +12,9 @@
     .very-small-card h3{
         font-size: 18px !important;
     }
+    .news-para{
+        font-size: 22px;
+    }
 
 }
 @media (min-width: 921) {
