@@ -15,6 +15,9 @@
     .news-para{
         font-size: 22px;
     }
+    .navbar-header-img{
+        width: 280px !important;
+    }
 
 }
 @media (min-width: 921) {
