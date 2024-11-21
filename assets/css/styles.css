@@ -64,6 +64,7 @@ h1{
     font-weight: 600;
     font-size: 22px;
     color: #222 !important;
+    display: inline-block;
 }
 
 
@@ -85,23 +86,25 @@ a:hover{
 }
 
 /* Enable dropdown on hover */
-.nav-item.dropdown:hover .dropdown-menu {
+.large-navbar-ul .nav-item.dropdown:hover .dropdown-menu {
     display: block; /* Show the dropdown menu on hover */
     margin-top: 0; /* Ensure proper alignment */
 }
 
 
 /* Optional: Make the dropdown smooth on hover */
-.dropdown-menu {
+.large-navbar-ul .dropdown-menu {
     transition: opacity 0.3s ease, visibility 0.3s ease;
     opacity: 0;
     visibility: hidden;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
+.large-navbar-ul .nav-item.dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
 }
+
+
 /* .navbar{
     position: relative;
 } */
